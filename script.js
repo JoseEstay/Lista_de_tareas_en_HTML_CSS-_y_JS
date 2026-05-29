@@ -16,7 +16,6 @@ function crearPublicacion(textoTarea){
         postUser.remove(); 
     });
     
-    // Ensamblar
     postUser.appendChild(textoUsuario)
     postUser.appendChild(btnEliminar)
     contenedorPublicaciones.appendChild(postUser)
@@ -27,7 +26,6 @@ formulario.addEventListener('submit', function(e){
     
     const valorTarea = tareaInput.value;
     
-    // .trim() evita que se envíen tareas compuestas solo por espacios en blanco
     if(valorTarea.trim() === ''){
         alert('Debes escribir una tarea')
     } else {
